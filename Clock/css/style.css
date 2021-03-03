@@ -1,0 +1,18 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgba(44, 66, 165, 0.76);
+    box-sizing: border-box;
+    
+}
+
+.clock{
+    background-color: rgba(253, 250, 250, 0.726);
+    width: 30%;
+    height: 200px;
+    border: 4px solid rgba(73, 43, 112, 0.651);
+    border-radius: 10px;
+    margin: 300px auto;
+    color: rgb(8, 7, 7);
+    font-size: 70px;
+}
