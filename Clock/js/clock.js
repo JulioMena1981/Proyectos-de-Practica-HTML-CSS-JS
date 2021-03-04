@@ -1,16 +1,48 @@
+function clock(){
 
-function show(){
-    var date =  new Date();
-    var hours = date.getHours();
-    var minutes = date.getMinutes();
-    var seconds = date.getSeconds();
+    let date = new Date();
+
+    let day = date.getDay();
+    let month = date.getMonth();
+    let year = date.getUTCFullYear();
+
+    let temp = day + month + year;
+
+    
+
+    let hms = new Date();
+
+    let hours = hms.getHours();
+    let minutes = hms.getMinutes();
+    let seconds = hms.getSeconds();
+    
+    let hourDay = "AM";
+
+    if(hours == 24){
+        hours = 00;
+    }
+
+    if(hours > 24){
+        hours = hours - 12;
+    }
+
+    if(hours > 12){
+        hourDay = "PM"
+    }
+     
+    if(minutes < 10){
+        minutes = 0 + minutes;
+    }
+
+    let time = hours + ":" + minutes + ":" + seconds + " " + hourDay;
+
+    
+
+    document.getElementById("clock").innerHTML = time;
+
+    setTimeout(clock, 1000);
 
 
-    temp =  hours + minutes + seconds;
-
-    document.getElementById("clock").innerText = temp;
-
-    document.getElementById("clock").textContent = temp;
 }
- show();
 
+clock();
