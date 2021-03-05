@@ -1,12 +1,12 @@
 function clock(){
 
-    let date = new Date();
+    /*let date = new Date();
 
     let day = date.getDay();
     let month = date.getMonth();
     let year = date.getUTCFullYear();
 
-    let temp = day + month + year;
+    let temp = day + month + year;*/
 
     
 
@@ -29,10 +29,7 @@ function clock(){
     if(hours > 12){
         hourDay = "PM"
     }
-     
-    if(minutes < 10){
-        minutes = 0 + minutes;
-    }
+   
 
     let time = hours + ":" + minutes + ":" + seconds + " " + hourDay;
 
