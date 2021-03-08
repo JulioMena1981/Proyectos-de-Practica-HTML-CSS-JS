@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Numbers</title>
+	<meta charset="utf-8" />
+</head>
+<body>
+	<script>
+		
+        /* 4. Make a script that asks for numbers until “cancel” is pressed. If it is not a number, 
+        it must be indicated with an "alert" and continue asking. When exiting with "cancel", the total sum of the 
+        numbers entered must be indicated. */
+        
+        let add = 0;
+
+        do{
+
+            let number = prompt("Enter a number: ", "");
+
+            if(Number(number) == number){
+
+                number = Number(number);
+
+                add = add + number;
+            }else{
+                if(number != undefined){
+                    alert("Not is a number");
+                }
+            }
+        
+        }while(number != undefined);
+
+        document.write(add);
+
+
+	</script>
+</body>
+</html>

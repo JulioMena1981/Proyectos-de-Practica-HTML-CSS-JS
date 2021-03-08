@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>School Note</title>
+	<meta charset="utf-8" />
+</head>
+<body>
+	<script>
+		
+        // 2. Ask for a note (number). Shows the grade according to the note: 
+        
+        let note;
+        note = prompt("Enter your note: ", "");
+
+        if(note <= 3){
+            document.write("Very poor");
+        }else if(note >= 3 && note <= 5 ){
+            document.write("Insufficient");
+        }else if(note >= 5 && note <= 6){
+            document.write("Enough");
+        }else if(note >= 6 && note <= 7){
+            document.write("Good");
+        }else if(note >= 7 && note <= 9){
+            document.write("Remarkable");
+        }else{
+            document.write("Excellent");
+        }
+
+	</script>
+</body>
+</html>
