@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 4</title>
+</head>
+<body>
+    <script>
+        /* 1 Load the side of a square, display its perimeter on the screen
+         (The perimeter of a square is calculated by multiplying the value of the side by four)*/
+
+         var side = prompt('Enter the side of Square: ');
+
+         var square = side * 4;
+
+        document.write(square);
+
+        /* 2 Write a program in which four numbers are entered, 
+        calculate and report the sum of the first two and the product of the third and fourth.*/
+
+        var numberOne = prompt('Enter a number one:');
+        var numberTwo = prompt('Enter a number two:');
+        var numberThree = prompt('Enter a number three:');
+        var numberFourth = prompt('Enter a number fourth:');
+
+        var resultSum = numberOne + numberTwo;
+        var resultProduct = numberThree * numberFourth;
+
+        document.write(resultSum);
+        document.write('<br>');
+        document.write(resultProduct);
+
+
+        /* 3 Make a program that reads four numerical values and report their sum and product.*/
+
+        var number1 = prompt('Enter a number one:');
+        var number2 = prompt('Enter a number two:');
+        var number3 = prompt('Enter a number three:');
+        var number4 = prompt('Enter a number fourth:');
+
+        var sum = number1 + number2 + number3 + number4;
+
+        var product = (number1 * number2) * (number3 * number4);
+
+        document.write(sum);
+        document.write('<br>');
+        document.write(product);
+
+
+        /* A program must be developed that asks for the price of an item and the quantity that the customer carries. 
+        Show what the buyer must pay (Enter a price without decimals, that is, an integer: 2, 7, 90 etc.) */
+
+        var price = prompt('Price of product:');
+        var quantity = prompt('Quantity of products:');
+
+        var price = price * quantity;
+
+        document.write(price);
+
+        
+    </script>
+</body>
+</html>

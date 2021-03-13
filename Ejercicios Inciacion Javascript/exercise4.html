@@ -10,27 +10,27 @@
         /* 4. Make a script that asks for numbers until “cancel” is pressed. If it is not a number, 
         it must be indicated with an "alert" and continue asking. When exiting with "cancel", the total sum of the 
         numbers entered must be indicated. */
-        
-        let add = 0;
+
+        var sum = 0;
 
         do{
+            var figure = prompt('Enter a number: ')
 
-            let number = prompt("Enter a number: ", "");
+            if(Number(figure) == figure){
 
-            if(Number(number) == number){
+                figure = Number(figure);
 
-                number = Number(number);
-
-                add = add + number;
-            }else{
-                if(number != undefined){
-                    alert("Not is a number");
+                sum = sum + figure;
+            }
+            else{
+                
+                if(figure != undefined){
+                    alert(figure + ' Not is a number');
                 }
             }
-        
-        }while(number != undefined);
+        }while(numero != undefined);
 
-        document.write(add);
+        document.write(figure);
 
 
 	</script>

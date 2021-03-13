@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 6</title>
+</head>
+<body>
+    <script>
+        /* Carry out a program that reads two numbers on the keyboard, if the first is greater than the second, 
+        inform its sum and difference, otherwise, inform the product and the division of the first with respect to the second. */
+
+        var numberOne = prompt('Enter firts number');
+        var numberTwo = prompt('Enter the second number');
+        
+        if(numberOne>=numberTwo){
+            var sum = numberOne + numberTwo;
+            var difference = numberOne - numberTwo;
+
+            document.write(sum);
+            document.write(difference);
+        }else{
+            var product = numberOne * numberTwo;
+            var division = numberOne / numberTwo;
+
+            document.write(product);
+            document.write(division);
+        }
+
+        /* Three grades from a student are entered, 
+        if the average is greater than or equal to 4, show a 'regular' message, but rather 'failed'. */
+        
+        var noteOne = prompt('Enter first note');
+        var noteTwo = prompt('Enter second note');
+        var noteThree = prompt('Enter last note');
+
+        var sum = noteOne + noteTwo + noteThree;
+        var average = sum / 3;
+
+        if(average>=4){
+            document.write('regular');
+        }else{
+            document.write('failed');
+        }
+
+    </script>
+</body>
+</html>

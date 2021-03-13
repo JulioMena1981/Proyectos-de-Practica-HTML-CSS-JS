@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 5</title>
+</head>
+<body>
+    <script>
+        /* Three grades from a student are entered, if the average is greater than or equal to seven, show the message 'Promoted'. Take into account that to obtain the average we must operate sum = note1 + note2 + note3; and then average = sum / 3;
+        When we load a note and we want to immediately convert the entered value to an integer we can do:
+        note1 = prompt ('Enter first note:', '');
+        note1 = parseInt (note1); */
+
+        var note1 = prompt('Enter firts note');
+        var note2 = prompt('Enter second note');
+        var note3 = prompt('Enter three note');
+
+        note1 = parseInt(note1);
+        note2 = parseInt(note2);
+        note3 = parseInt(note3);
+
+        var sum = note1 + note2 + note3;
+
+        var average = sum / 3;
+
+        if(average>=7){
+            document.write('Promoted');
+        }
+
+        /* Request that a password be entered twice. Show a message if they are the same 
+        (note that to see if two variables have the same stored value we must use the == operator) */
+
+        var password1 = prompt('Enter a password');
+        var password2 = prompt('Retype password');
+
+        if(password1 == password2){
+            document.write('Logged');
+        }
+
+        
+    </script>
+</body>
+</html>
